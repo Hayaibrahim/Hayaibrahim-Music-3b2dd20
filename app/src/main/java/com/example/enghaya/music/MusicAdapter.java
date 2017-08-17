@@ -17,12 +17,10 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MusicViewHol
 Context context ;
     List<Music> students;
     TextView name;
-
     public MusicAdapter(Context context, List<Music> students) {
         this.context = context;
         this.students = students;
     }
-
     public Context getContext() {
         return context;
     }
@@ -43,15 +41,11 @@ Context context ;
     public MusicAdapter.MusicViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.music,parent,false);
         MusicViewHolder viewHolder= new MusicViewHolder(v);
-
         return viewHolder;
     }
-
     @Override
     public void onBindViewHolder(MusicAdapter.MusicViewHolder holder, int position) {
-
     }
-
     @Override
     public int getItemCount() {
         return 0;
@@ -61,10 +55,4 @@ Context context ;
          public MusicViewHolder(View v) {
             super(v);
             name = (TextView) v.findViewById(R.id.textView);
-
-
-        }
-
-
-    }
-}
+        }}}

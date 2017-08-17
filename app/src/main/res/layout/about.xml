@@ -6,6 +6,14 @@
     android:orientation="vertical"
     android:weightSum="1">
 
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about1"
+        android:textColor="#dc6e00"
+        android:textSize="20sp"
+        android:layout_margin="10dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -20,8 +28,7 @@
         android:layout_gravity="center"
         android:ellipsize="end"
         android:singleLine="true"
-        android:text="
-The music you love. On the go"
+        android:text="The music you love. On the go"
         android:textColor="#5e7d93"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -31,10 +38,16 @@ The music you love. On the go"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=" Your music. Wherever you go.
- is the perfect way to carry your music collection in your pocket.Your music.
-"
+ is the perfect way to carry your music collection in your pocket.Your music."
         android:textColor="#4b5cde"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:background="#8db6f1"
+        android:layout_weight="0.08"/>
 
 </LinearLayout>

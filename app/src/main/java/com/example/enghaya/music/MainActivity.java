@@ -24,8 +24,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.paypal.android.sdk.payments.PayPalConfiguration;
-import com.paypal.android.sdk.payments.PayPalService;
 
 public class MainActivity extends AppCompatActivity   {
      Button Pay;
@@ -36,8 +34,8 @@ public class MainActivity extends AppCompatActivity   {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-          Pay = (Button) findViewById(R.id. Pay);
-          Amount = (EditText) findViewById(R.id.Amount);
+        Pay = (Button) findViewById(R.id.Pay);
+        Amount = (EditText) findViewById(R.id.Amount);
 
         Button music = (Button) findViewById(R.id.music);
         music.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +57,7 @@ public class MainActivity extends AppCompatActivity   {
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent b = new Intent(MainActivity.this,payment.class);
+                Intent b = new Intent(MainActivity.this, payment.class);
                 startActivity(b);
             }
         });

@@ -30,6 +30,7 @@
             android:layout_weight="1"
             android:text="TextView" />
 
+
         <SeekBar
             android:id="@+id/seekBar"
             android:layout_width="match_parent"
@@ -76,7 +77,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/next1" />
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:background="#8db6f1"
+            android:layout_weight="0.08"/>
+
     </LinearLayout>
 
 </LinearLayout>
