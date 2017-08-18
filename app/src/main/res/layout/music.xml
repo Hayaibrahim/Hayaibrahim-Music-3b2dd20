@@ -4,15 +4,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools" >
-
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:layout_margin="3dp">
     <ListView
         android:id="@+id/list_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,18 +25,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:ellipsize="middle"
-            android:singleLine="true"
-            android:layout_weight="1"
-            android:text="TextView" />
-
+             android:layout_weight="1"
+            android:text="This application is for the music player and for listening to the music, press Play" />
 
         <SeekBar
             android:id="@+id/seekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:max="100"
-            android:paddingBottom="10dp"
-            />
+            android:paddingBottom="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,8 +47,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/prev" />
-
-
 
             <ImageButton
                 android:id="@+id/play"
@@ -89,5 +83,4 @@
             android:layout_weight="0.08"/>
 
     </LinearLayout>
-
 </LinearLayout>

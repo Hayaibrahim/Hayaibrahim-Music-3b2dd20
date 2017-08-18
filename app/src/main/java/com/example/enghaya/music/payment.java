@@ -13,8 +13,11 @@ public class payment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment);
+        setTitle("paypal");
+       // enter the button "if you click this button back to list"
         Button back = (Button) findViewById(R.id.back1);
         back.setOnClickListener(new View.OnClickListener() {
+          //  this method for intent "open payement class "
             @Override
             public void onClick(View v) {
                 Intent back = new Intent(payment.this,MainActivity.class);

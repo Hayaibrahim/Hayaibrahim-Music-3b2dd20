@@ -16,7 +16,10 @@ public class Music extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.music);
+        // enter the button "if you click this button back to list"
         Button backmusic = (Button) findViewById(R.id.back3);
+        setTitle("Music");
+        //  this method for intent " open music class "
         backmusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
