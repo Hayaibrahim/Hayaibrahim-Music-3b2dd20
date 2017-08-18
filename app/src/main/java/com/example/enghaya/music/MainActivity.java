@@ -10,9 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     Button Pay;
     EditText Amount;
-    //Payment Amount
-    String paymentAmount;
-    @Override
+      @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -41,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent b = new Intent(MainActivity.this, payment.class);
                 startActivity(b);
+
             }
         });
     }
-
-}
+ }
