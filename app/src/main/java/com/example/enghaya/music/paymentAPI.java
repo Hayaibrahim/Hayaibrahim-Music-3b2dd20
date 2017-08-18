@@ -7,7 +7,7 @@ import android.widget.Button;
 /**
  * Created by ENG.HAYA on 8/17/2017 AD.
  */
-public class payment extends AppCompatActivity {
+public class paymentAPI extends AppCompatActivity {
     //payment class music Linked with payment.xml
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class payment extends AppCompatActivity {
           //  this method for intent "open payement class "
             @Override
             public void onClick(View v) {
-                Intent back = new Intent(payment.this,MainActivity.class);
+                Intent back = new Intent(paymentAPI.this,MainActivity.class);
                 startActivity(back);
             }
         });

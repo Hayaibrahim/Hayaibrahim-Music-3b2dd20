@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent b = new Intent(MainActivity.this, payment.class);
+                Intent b = new Intent(MainActivity.this, paymentAPI.class);
                 startActivity(b);
 
             }
